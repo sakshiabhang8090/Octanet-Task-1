@@ -1,0 +1,97 @@
+nav {
+  
+    display: flex;
+  
+    justify-content: space-around;
+  
+    align-items: center;
+  
+    min-height: 8vh;
+  
+    background-color: teal;
+  
+    font-family: "Montserrat", sans-serif;
+  
+  }
+  .heading {
+  
+    color: white;
+  
+    text-transform: uppercase;
+  
+    letter-spacing: 5px;
+  
+    font-size: 20px;
+  
+  }
+  .nav-links a {
+  
+    color: #d2691e;
+  
+    text-decoration: none;
+  
+    letter-spacing: 3px;
+  
+    font-weight: bold;
+  
+    font-size: 18px;
+  
+    padding: 14px 16px;
+  
+  }
+  
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+	background-color: rgba(255, 127, 80, 0.334);
+}
+
+h1 {
+    color: #d2691e;
+}
+
+.flower-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.flower-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.flower-item img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+	height: 400px;
+}
+
+.flower-item:hover img {
+    transform: scale(1.05); 
+}
+
+.hover-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+    font-size: 24px;
+}
+
+.flower-item:hover .hover-info {
+    opacity: 1; 
+}
+
